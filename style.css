@@ -1,0 +1,87 @@
+/* CSS for styling the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -20px; /* Adjust the value (-10px) as needed */
+}
+
+nav ul li {
+    margin: 0 20px;
+    margin-left: 20px;
+    
+}
+/*nav ul li:last-child {
+    position: relative;
+    left: -5px; /* Move the login button 10px to the left} */
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 100px 20px;
+    margin-top: 60px;
+}
+
+#home {
+    background: linear-gradient(to bottom, #4caf50, #81c784);
+    color: white;
+    text-align: center;
+}
+
+#features, #elements {
+    background: #f4f4f4;
+}
+
+#login {
+    background: #000000;
+    color: white;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
