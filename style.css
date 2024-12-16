@@ -67,7 +67,7 @@ section {
     background: #f4f4f4;
 }
 
-#login {
+login {
     background: #000000;
     color: white;
     text-align: center;
@@ -85,3 +85,17 @@ button {
 button:hover {
     background-color: #388e3c;
 }
+#video {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#video video {
+    max-width: 100%; /* Ensures responsiveness */
+    border: 3px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
