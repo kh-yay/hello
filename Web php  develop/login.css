@@ -1,0 +1,21 @@
+
+#Lgntitle{
+    color: #6d6d6d;
+   
+    margin: auto;
+    align-items: center;
+
+}
+.fr {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between fields */
+    width: 300px;
+    margin: 50px auto; /* Center the form */
+  }
+
+  .field-group {
+    display: flex;
+    align-items: center; /* Align fields vertically */
+    justify-content: space-between; /* Space between label and input */
+  }
