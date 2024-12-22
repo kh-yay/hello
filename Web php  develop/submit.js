@@ -22,6 +22,14 @@ allStar.forEach((item,idx)=>{
         }
    })
 })
+// Select the "Comment" button
+const cancelButton = document.querySelector('.btn.cancel');
+
+// Add a click event listener to the button
+cancelButton.addEventListener('click', function () {
+    // Navigate to the "submit.html" page
+    window.location.href = 'forum.html';
+});
 
 document.querySelector('form').addEventListener('submit', function (e) {
     e.preventDefault(); // Prevent default form submission
@@ -57,3 +65,4 @@ document.querySelector('form').addEventListener('submit', function (e) {
             alert('An unexpected error occurred. Please try again.');
         });
 });
+
