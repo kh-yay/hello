@@ -125,7 +125,7 @@ html{
 }
 
 .text-box{
-    width: 90%;
+    width: 60%;
     color: white;
     position: absolute;
     top: 50%;
@@ -136,6 +136,103 @@ html{
 .text-box h1{
     font-size: 50px;
 }
+
+/* Animated Image Styling */
+.animated_image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+}
+
+.animated_image img:first-child {
+    position: absolute;
+    bottom: 5%;
+    top: 50%;
+    margin-top: 60px;
+    left: 5%;
+    animation: popUp 2s ease-in-out;
+    width: 250px;
+    height: auto;
+}
+.animated_image img.Gita {
+    position: absolute;
+    top: 50%;
+    bottom: 10%;
+    margin-top: 60px;
+    right: 5%;
+    animation: popUp 2s ease-in-out;
+    width: 250px;
+    height: auto;
+}
+
+
+/* Pop-Up Animation */
+@keyframes popUp {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  
+
+    .text-box {
+        width: 60%;
+    }
+
+    .text-box h1 {
+        font-size: 36px;
+    }
+
+    .animated_image img.Ali,
+    .animated_image img.Gita {
+        width: 180px;
+        margin-top: 20px; /* Reduced margin for smaller screens */
+       
+    }
+
+    .animated_image img.Ali {
+        left: 5%; /* Maintain positioning */
+    }
+
+    .animated_image img.Gita {
+        right: 5%; /* Maintain positioning */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text-box h1 {
+        font-size: 28px;
+    }
+
+    .animated_image img.Ali,
+    .animated_image img.Gita {
+        width: 150px;
+        margin-top: 80px; /* Further reduce margin for very small screens */
+        
+    
+    }
+
+    .animated_image img.Ali {
+        left: 2%;
+    }
+
+    .animated_image img.Gita {
+        right: 2%;
+    }
+}
+
+
 /*button {
     padding: 10px 20px;
     background-color: #4caf50;
@@ -216,7 +313,7 @@ button:hover {
 
     .features-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 2fr);
         gap: 20px;
         max-width: 1200px;
         margin: auto;
@@ -430,8 +527,10 @@ p{
 .casestudy__container{
     display: grid;
     place-items: center;
-    padding-block:5rem ;
+    padding:4rem ;
     background-color: #388e3c;
+  
+    
 }
 .card__container{
     display: grid;
@@ -572,11 +671,12 @@ footer{
     position: relative;
     width: 100%;
     background: #3586ff;
-    min-height: 200px;
+    min-height: 50px;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top:35px ;
     flex-direction: column;
 }
 footer .social_icon ,footer .menu{
