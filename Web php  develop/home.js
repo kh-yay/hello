@@ -11,9 +11,23 @@ menuIcon.addEventListener('click',() => {
   navbar.classList.toggle('active');
   navbg.classList.toggle('active');
 });
+// JavaScript for pop-up functionality
+document.getElementById("subscribe-btn").addEventListener("click", function (event) {
+  event.preventDefault();
+  document.getElementById("subscribe-popup").style.display = "flex";
+});
 
- 
+document.getElementById("close-popup").addEventListener("click", function () {
+  document.getElementById("subscribe-popup").style.display = "none";
+});
 
+
+window.addEventListener("click", function (event) {
+  const popup = document.getElementById("subscribe-popup");
+  if (event.target === popup) {
+      popup.style.display = "none";
+  }
+});
 
 let currentSlide = 0;
 function showslide(index){
