@@ -9,7 +9,10 @@ html{
     font-family:'Poppins',sans-serif;
     background-color: var(--light);
 
-    background-image:url("bg.jpg");
+    background-image: linear-gradient(rgba(89, 169, 193, 0.253),rgba(9, 23, 80, 0.363)),url(image/bg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 :root{
@@ -33,28 +36,20 @@ p {
 }
 
 .container{
-   
-    margin:20px;
-    padding:20px;
-  
-    
-    border-radius:.75rem;
-    
-    
-
+    margin-top: 5%;
 }
 
 .subforum{
     margin-top: 10px;
     box-shadow: var(--shadow);
-    backdrop-filter:blur(50px);
+   
     border-radius:5px;
     padding:10px;
 }
 
 .subforum-title{
 
-    background-color:var(--light);
+    
     padding:6px;
     border-radius:5px;
     margin:4px;
