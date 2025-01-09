@@ -26,7 +26,7 @@ window.addEventListener("click", function (event) {
   const popup = document.getElementById("subscribe-popup");
   if (event.target === popup) {
       popup.style.display = "none";
-  }
+}
 });
 
 let currentSlide = 0;
@@ -44,12 +44,3 @@ function showNextSlide(){
   showslide(currentSlide);
 }
 showslide(currentSlide);
-
-
-
-
-
-
-
-
-
