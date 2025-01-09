@@ -20,6 +20,13 @@ body{
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment:fixed;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  background-image:url(image/bg.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 /* reuseable css*/
 a{
@@ -95,6 +102,7 @@ background:rgba(0,0,0, 0.2)
   display:flex;
   flex-direction:column;
   margin: 10px 0;
+  
 }
 .input-field{
   width:100%;
@@ -107,6 +115,59 @@ background:rgba(0,0,0, 0.2)
   border-radius:30px;
   outline:none;
 }
+
+/* Hide error icons and messages by default */
+.input_box .bx,
+.input_box small {
+  visibility: hidden; /* Keep them hidden initially */
+  
+}
+
+.input_box .bx {
+  visibility: hidden;
+}
+
+.input_box.small {
+  visibility: hidden;
+  color: red;
+  font-size: 12px;
+}
+
+/* Show the error icon and message when there's an error */
+.input_box.error .bx.bxs-error-circle,
+.input_box.error small {
+  color: red;
+  visibility: visible; /* Show error icon and message on error */
+}
+
+.input_box.success .bx.bxs-check-circle {
+  color: green;
+  visibility: visible; /* Show success icon */
+}
+
+/* Change border color based on validation */
+.input_box.success .input-field {
+  border-color: green;
+}
+
+.input_box.error .input-field {
+  border-color: red;
+}
+
+/* Reset states when the user interacts with the fields */
+.input-field:focus ~ small,
+.input-field:valid ~ small {
+  display: none;
+}
+
+.input-box.success .input-field {
+  border-color: green;
+}
+
+.input-box.error .input-field {
+  border-color: red;
+}
+
 #user{
   margin-bottom:10px;
 }
@@ -116,7 +177,7 @@ background:rgba(0,0,0, 0.2)
   #pass{
     margin-bottom:10px;
   }
-  #user{
+  #pass2{
     margin-bottom:10px;
   }
 .label{
