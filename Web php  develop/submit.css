@@ -23,7 +23,11 @@ body{
     justify-content: center;
     align-items:center;
     min-height: 100vh;
-    background-image:url("bg.jpg");
+    background-image:url("bg.png");
+    background-image: linear-gradient(rgba(89, 169, 193, 0.558),rgba(9, 23, 80, 0.7)),url(image/bg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 .wrapper{
