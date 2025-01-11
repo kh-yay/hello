@@ -89,7 +89,7 @@ html{
     left: 0;
     width: 100%;
     padding: 20px;    
-    background: rgba(79, 78, 78, 0.707);
+    background: rgba(0, 118, 182, 0.314);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -157,7 +157,7 @@ html{
         left: 0;
         width: 100%;
         padding: 0.5rem 4%;
-         background: rgba(79, 78, 78, 0.707);
+         background: rgba(0, 118, 182, 0.908);
         border-bottom: 2px solid rgba(255,255,255,0.2);
         backdrop-filter: blur(10px);
         display: none;
@@ -176,7 +176,7 @@ html{
         left: 0;
         width: 100%;
         height: 295px;
-        background: rgba(79, 78, 78, 0.1);
+        background: rgba(208, 19, 19, 0.1);
         border-bottom: 2px solid rgba(255,255,255,0.2);
         backdrop-filter: blur(10px);
         z-index: 99;
@@ -193,7 +193,7 @@ html{
     color: white;
     text-align: center;
     height: 100vh;
-    background-image: linear-gradient(rgba(89, 169, 193, 0.558),rgba(9, 23, 80, 0.7)),url(image/bg.png);
+    background-image: linear-gradient(rgba(202, 240, 248, 0.779),rgba(0, 180, 216, 0.401)),url(image/bg.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -204,7 +204,7 @@ html{
     
     width: 800px;
     color: white; /* Text color */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    background-color: rgba(245, 183, 177, 0.849); /* Semi-transparent black background */
     border: 2px solid white; /* Adds a white border */
     border-radius: 15px; /* Rounds the corners of the box */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for depth */
@@ -231,7 +231,7 @@ html{
 
 .animated_image img {
     position: absolute;
-    animation: popUp 2s ease-in-out;
+   
     height: auto;
 }
 
@@ -349,7 +349,7 @@ button:hover {
 
 
 #video {
-    background-color: rgba(84, 107, 185, 0.422);
+    background-color: rgb(202, 240, 248);
     padding: 50px;
     text-align: center;
     
@@ -361,7 +361,7 @@ button:hover {
 .video-container {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
     overflow: hidden;
 }
@@ -410,16 +410,17 @@ button:hover {
 /* Feature Section Styling */
 #features {
         padding: 30px 20px;
-        background-color: rgba(84, 107, 185, 0.555);
+        background-color: rgba(245, 183, 177, 0.556);
 }
 .feature-title {
-    color: #fff; /* Ensure text is visible */
+    
     text-align: center; /* Center the title */
     margin-bottom: 60px; /* Add some space below the title */
     padding: 50px;
 }
 
 .feature-title h1 {
+    color: #0077B6; 
     font-size: 3rem; /* Adjust title size */
     margin-bottom: 70px; /* Space between title and description */
 }
@@ -428,6 +429,7 @@ button:hover {
     font-size: 1.1rem; /* Adjust description text size */
     max-width: 800px; /* Set a max-width for better readability */
     margin: 0 auto; /* Center the description */
+    color: #000000; /* Ensure text is visible */
     line-height: 40px;
 }
     .features-container {
@@ -450,9 +452,12 @@ button:hover {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
+    .feature-item p{
+        color: #000000;
+    }
     .feature-item:hover {
         transform: translateY(-10px);
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.419);
     }
 /* Completely remove shadow for Picture 2 */
 .features-container .feature-item:nth-child(2) {
@@ -463,6 +468,7 @@ button:hover {
     align-items: center; /* Horizontally center content */
     text-align: center; /* Center-align text */
     height: 100%; /* Ensure the container has a height */
+    
 }
 
 /* Ensure no hover shadow or animation for Picture 2 */
@@ -565,7 +571,7 @@ button:hover {
 .features-container .feature-item:nth-child(2) h3 {
     display: block;
     margin: 10px 0;
-    color: #fff; /* Adjust text color to contrast the background */
+    color: #000000; /* Adjust text color to contrast the background */
     text-align: left !important;
     align-items: left !important;
 }
@@ -573,7 +579,7 @@ button:hover {
 .features-container .feature-item:nth-child(2) p {
     display: block;
     margin: 10px 0;
-    color: #fff; /* Adjust text color to contrast the background */
+    color: #333333; /* Adjust text color to contrast the background */
     text-align: left;
     align-items: center;
 }
@@ -582,7 +588,7 @@ button:hover {
 .features-container .feature-item:nth-child(3) h3 {
     display: block;
     margin: 10px 0;
-    color: #fff; /* Adjust text color to contrast the background */
+    color: #000000; /* Adjust text color to contrast the background */
     text-align: center;
     align-items: center;
 }
@@ -590,7 +596,7 @@ button:hover {
 .features-container .feature-item:nth-child(3) p {
     display: block;
     margin: 10px 0;
-    color: #fff; /* Adjust text color to contrast the background */
+    color: #333333; /* Adjust text color to contrast the background */
     text-align: left;
     align-items: right;
 }
@@ -599,7 +605,7 @@ button:hover {
 .features-container .feature-item:nth-child(6) h3 {
     display: block;
     margin: 10px 0;
-    color: #fff; /* Adjust text color to contrast the background */
+    color: #000000; /* Adjust text color to contrast the background */
     text-align: center;
     align-items: center;
 }
@@ -607,7 +613,7 @@ button:hover {
 .features-container .feature-item:nth-child(6) p {
     display: block;
     margin: 10px 0;
-    color: #fff; /* Adjust text color to contrast the background */
+    color: #333333; /* Adjust text color to contrast the background */
     text-align: left;
     align-items: center;
 }
@@ -616,7 +622,7 @@ button:hover {
 .features-container .feature-item:nth-child(7) h3 {
     display: block;
     margin: 10px 0;
-    color: #fff; /* Adjust text color to contrast the background */
+    color: #000000; /* Adjust text color to contrast the background */
     text-align: center;
     align-items: center;
 }
@@ -624,7 +630,7 @@ button:hover {
 .features-container .feature-item:nth-child(7) p {
     display: block;
     margin: 10px 0;
-    color: #fff; /* Adjust text color to contrast the background */
+    color: #333333; /* Adjust text color to contrast the background */
     text-align: left;
     align-items: center;
 }
@@ -633,7 +639,7 @@ button:hover {
 .features-container .feature-item:nth-child(10) h3 {
     display: block;
     margin: 10px 0;
-    color: #fff; /* Adjust text color to contrast the background */
+    color: #000000; /* Adjust text color to contrast the background */
     text-align: left !important; /* Force the alignment */
     
 }
@@ -641,7 +647,7 @@ button:hover {
 .features-container .feature-item:nth-child(10) p {
     display: block;
     margin: 10px 0;
-    color: #fff; /* Adjust text color to contrast the background */
+    color: #333333; /* Adjust text color to contrast the background */
     text-align: left;
     align-items: center;
 }
@@ -672,7 +678,7 @@ button:hover {
 /* 3D DIG Framework Section */
 .framework-section {
     padding: 90px 20px;
-    background-color: rgba(84, 107, 185, 0.681);
+    background-color: rgba(144, 224, 239, 0.681);
 }
 
 .framework-container {
@@ -777,7 +783,7 @@ button:hover {
     justify-content: space-between; /* Ensure the elements are spaced out */
     align-items: center; /* Vertically align the items */
     width: 100%;
-    background-color: rgba(84, 107, 185, 0.803);
+    background-color: rgba(202, 240, 248, 0.481);
 }
 
 .slide-container {
@@ -807,7 +813,7 @@ button:hover {
 
 
 .testimonial-box{
-    background: rgba(222, 255, 246, 0.5);
+    background: rgba(245, 183, 177, 0.862);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(222, 255, 246, 0.25);
@@ -835,7 +841,7 @@ button:hover {
 }
 .testimonial-box:hover{
     transform: scale(1.01);
-    border-color: #555;
+    border-color: #0077B6;
     transition: transform 0.5s ease-in-out;
    
 }
@@ -847,7 +853,7 @@ button:hover {
     
 }
 .testimonial-img{
-    box-shadow: 3px 3px 10px 3px #dddddd;
+    box-shadow: 1px 3px 5px 1px #dddddd;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -1068,7 +1074,7 @@ button:hover {
     display: grid;
     place-items: center;
     padding: 4rem;
-    background-color: rgba(84, 107, 185, 0.905);
+    background-color: rgba(0, 180, 216, 0.905);
 }
 
 .card__container {
@@ -1082,7 +1088,7 @@ button:hover {
 .card__article {
     position: relative;
     overflow: hidden;
-    background: wheat; /* Match feature-item background */
+    background: #f5B7B1; /* Match feature-item background */
     border-radius: 10px; /* Consistent with feature-item */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1101,12 +1107,12 @@ button:hover {
 }
 
 .card__data {
-    width: 100%; /* Make data fit the card */
-    padding: 1.5rem 2rem;
+    width: 0%; /* Make data fit the card */
+    padding: 0rem 1rem;
     box-shadow: none; /* Remove extra shadow */
     position: relative;
     margin: auto;
-    opacity: 1; /* Always visible like features content */
+    opacity: 0; /* Always visible like features content */
     transform: none; /* Disable animations for uniformity */
 }
 
